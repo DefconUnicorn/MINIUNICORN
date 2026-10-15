@@ -1,0 +1,16 @@
+[package]
+name = "minimoog-d-v2"
+version = "0.2.2"
+edition = "2021"
+
+[dependencies]
+cpal = "0.15"
+midir = "0.9"
+eframe = "0.28"
+egui = "0.28"
+image = "0.24"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+
+[build-dependencies]
+winres = "0.1"
