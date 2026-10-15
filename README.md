@@ -1,4 +1,5 @@
 # MiniUnicorn
+<img width="1722" height="1012" alt="image" src="https://github.com/user-attachments/assets/3ba52798-44fa-4770-8a2f-21dc467534e8" />
 
 ![MiniUnicorn](MINIUNICORN.jpg)
 
