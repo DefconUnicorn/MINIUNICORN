@@ -22,7 +22,7 @@ not as a claim of component-level hardware emulation.
 - Context-sensitive patch routing menus with audio, CV, gate, and modulation compatibility filtering.
 - External input routing, phones routing, main-output routing, and feedback behavior.
 - Grid-snapped panel editor with dragging, box selection, multi-selection, rotation, hide/show, lines, labels, and keyboard nudging.
-- Named layout save/load support in `%APPDATA%\\minimoog-d-standalone`.
+- Named layout save/load support in `%APPDATA%\\miniunicorn`.
 - Preset save/load support.
 - MiniUnicorn logo embedded in the Windows executable and application window icon.
 
@@ -43,7 +43,7 @@ visual patch-bay and editable panel layout**.
 Download the current Windows release from the
 [Releases page](https://github.com/DefconUnicorn/MINIUNICORN/releases).
 
-The release contains `minimoog-d-v2.exe`.
+The release contains `miniunicorn-v2.exe`.
 
 ## Build From Source
 
@@ -56,7 +56,7 @@ cargo build --release
 The executable is written to:
 
 ```text
-target/release/minimoog-d-v2.exe
+target/release/miniunicorn-v2.exe
 ```
 
 The Windows icon is embedded during the build from `icon.ico` using `build.rs`.

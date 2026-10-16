@@ -239,9 +239,9 @@ fn layouts_dir() -> std::path::PathBuf {
         .map(std::path::PathBuf::from)
         .unwrap_or_else(|_| std::env::temp_dir());
     #[cfg(windows)]
-    dir.push("minimoog-d-standalone");
+    dir.push("miniunicorn");
     #[cfg(not(windows))]
-    dir.push(".minimoog-d-standalone");
+    dir.push(".miniunicorn");
     let _ = std::fs::create_dir_all(&dir);
     dir
 }

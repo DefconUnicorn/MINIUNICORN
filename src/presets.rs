@@ -4,8 +4,8 @@
 //! - `<dir>/last.json` — auto-saved working state, reloaded at startup.
 //! - `<dir>/presets/<name>.json` — named user presets.
 //!
-//! Dir: `%APPDATA%/minimoog-d-standalone` on Windows, else
-//! `$HOME/.minimoog-d-standalone` (fallback: OS temp dir).
+//! Dir: `%APPDATA%/miniunicorn` on Windows, else
+//! `$HOME/.miniunicorn` (fallback: OS temp dir).
 
 use crate::params::Params;
 use std::path::PathBuf;
@@ -14,17 +14,17 @@ fn state_dir() -> PathBuf {
     #[cfg(windows)]
     {
         if let Ok(appdata) = std::env::var("APPDATA") {
-            let p = PathBuf::from(appdata).join("minimoog-d-standalone");
+            let p = PathBuf::from(appdata).join("miniunicorn");
             let _ = std::fs::create_dir_all(&p);
             return p;
         }
     }
     if let Ok(home) = std::env::var("HOME") {
-        let p = PathBuf::from(home).join(".minimoog-d-standalone");
+        let p = PathBuf::from(home).join(".miniunicorn");
         let _ = std::fs::create_dir_all(&p);
         return p;
     }
-    let p = std::env::temp_dir().join("minimoog-d-standalone");
+    let p = std::env::temp_dir().join("miniunicorn");
     let _ = std::fs::create_dir_all(&p);
     p
 }
